@@ -11,6 +11,8 @@ class Dessert
   def delicious?
     true
   end
+  attr_reader :name, :calories
+  attr_writer :name, :calories
 end
 
 class JellyBean < Dessert
