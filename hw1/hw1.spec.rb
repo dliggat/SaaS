@@ -48,6 +48,9 @@ describe Testing do
     input = ['cars', 'for', 'potatoes', 'racs', 'four','scar', 'creams', 'scream']
     output = [["cars", "racs", "scar"], ["four"], ["for"], ["potatoes"], ["creams", "scream"]]
     combine_anagrams(input).should =~ output
+    input = ['hello', 'heLLo', 'foo']
+    output = [['hello', 'heLLo'], ['foo']]
+    combine_anagrams(input).should =~ output
   end
 
   it 'should behave OOP correctly' do
